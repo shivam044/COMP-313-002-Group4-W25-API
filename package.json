@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "keywords": [
     "ams-backend"
   ],
-  "author": "",
+  "author": "Shivam Ujjainwal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shivam044/academic-management-platform-backend/issues"
@@ -26,7 +27,21 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "express-jwt": "^8.4.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.6.3"
+    "lodash": "^4.17.21",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.6.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "mockingoose": "^2.16.2",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
   }
 }
